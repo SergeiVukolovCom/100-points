@@ -17,3 +17,5 @@ class Test:
         pages.courses_page.click_on_courses_page(page)
         pages.courses_page.get_list_courses(page)
 
+
+

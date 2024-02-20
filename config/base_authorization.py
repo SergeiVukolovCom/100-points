@@ -25,3 +25,5 @@ class BaseAuthorization:
         credentials = self.read_credentials.get_credentials()
         if role in credentials:
             return credentials[role][field]
+        else:
+            raise ValueError(f"Роль '{role}' не найдена в файле credentials.json")

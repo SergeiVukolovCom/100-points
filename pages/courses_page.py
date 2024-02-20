@@ -10,3 +10,5 @@ class Courses:
 
     def get_list_courses(self, page: Page):
         return page.locator(self._COURSES_PAGE).text_content()
+
+

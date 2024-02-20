@@ -33,13 +33,15 @@ def get_firefox_browser(playwright) -> Browser:
     return playwright.firefox.launch(
         headless=config.playwright.IS_HEADLESS,
         slow_mo=config.playwright.SLOW_MO,
+        args=['--disable-web-security']
     )
 
 
 def get_chrome_browser(playwright) -> Browser:
     return playwright.chromium.launch(
         headless=config.playwright.IS_HEADLESS,
-        slow_mo=config.playwright.SLOW_MO
+        slow_mo=config.playwright.SLOW_MO,
+        args=['--disable-web-security']
     )
 
 

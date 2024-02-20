@@ -23,3 +23,4 @@ class RegistrationPage:
         page.wait_for_selector(self._CONTINUE_BUTTON)
         page.locator(self._CONTINUE_BUTTON).click()
 
+
